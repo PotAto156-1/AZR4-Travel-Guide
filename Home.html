@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outer Orbit Passenger Services | Interstellar Travel</title>
+    <style>
+        :root {
+            --deep-space: #020617;
+            --nebula-blue: #1e3a8a;
+            --starlight-cyan: #22d3ee;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--deep-space);
+            color: white;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: radial-gradient(circle at top right, #1e3a8a 0%, #020617 60%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 5%;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo { font-weight: 800; letter-spacing: 2px; color: var(--starlight-cyan); }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 10%;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            margin: 0;
+            background: linear-gradient(to bottom, #fff, var(--starlight-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p { opacity: 0.8; font-size: 1.2rem; max-width: 600px; margin: 20px auto; }
+
+        /* Glass Card */
+        .destination-card {
+            background: var(--glass);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 400px;
+            margin: 50px auto;
+            backdrop-filter: blur(15px);
+            transition: transform 0.3s ease;
+        }
+
+        .destination-card:hover { transform: translateY(-10px); }
+
+        button {
+            background: var(--starlight-cyan);
+            color: var(--deep-space);
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+        }
+
+        button:hover { filter: brightness(1.1); }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">EXOVOYAGE</div>
+        <div>Destinations | Fleet | Safety</div>
+    </nav>
+
+    <main class="hero">
+        <p>NOW BOARDING FOR</p>
+        <h1>Kepler-186f</h1>
+        
+        <div class="destination-card">
+            <h3>The Lush "Earth 2.0"</h3>
+            <p>Experience red-hued sunsets and 1.1x Earth gravity in the first habitable-zone planet ever discovered.</p>
+            <button onclick="book()">Secure Ticket</button>
+        </div>
+    </main>
+
+    <script>
+        function book() {
+            alert("Hyperjump sequence initiated. See you in the Cygnus constellation!");
+        }
+    </script>
+</body>
+</html>
